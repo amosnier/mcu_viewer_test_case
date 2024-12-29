@@ -1,0 +1,36 @@
+add_executable(st_motor_control_01.elf
+        aspep.c
+        main.c
+        mc_api.c
+        mc_app_hooks.c
+        mc_config.c
+        mc_config_common.c
+        mc_configuration_registers.c
+        mc_interface.c
+        mc_math.c
+        mc_parameters.c
+        mc_perf.c
+        mc_tasks.c
+        mc_tasks_foc.c
+        mcp.c
+        mcp_config.c
+        motorcontrol.c
+        pwm_common.c
+        pwm_curr_fdbk.c
+        register_interface.c
+        regular_conversion_manager.c
+        stm32_mc_common_it.c
+        stm32g4xx_hal_msp.c
+        stm32g4xx_it.c
+        stm32g4xx_mc_it.c
+        system_stm32g4xx.c
+        usart_aspep_driver.c
+)
+target_link_libraries(st_motor_control_01.elf PRIVATE
+        app_h
+        motor_control
+        startup
+        stm32g4xx_driver
+        stm32g4xx_motor_control
+        user
+)

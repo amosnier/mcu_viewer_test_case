@@ -1,0 +1,27 @@
+add_library(stm32g4xx_driver
+        stm32g4xx_hal.c
+        stm32g4xx_hal_cortex.c
+        stm32g4xx_hal_dma.c
+        stm32g4xx_hal_dma_ex.c
+        stm32g4xx_hal_exti.c
+        stm32g4xx_hal_flash.c
+        stm32g4xx_hal_flash_ex.c
+        stm32g4xx_hal_flash_ramfunc.c
+        stm32g4xx_hal_gpio.c
+        stm32g4xx_hal_pwr.c
+        stm32g4xx_hal_pwr_ex.c
+        stm32g4xx_hal_rcc.c
+        stm32g4xx_hal_rcc_ex.c
+        stm32g4xx_hal_tim.c
+        stm32g4xx_hal_tim_ex.c
+        stm32g4xx_ll_adc.c
+        stm32g4xx_ll_cordic.c
+        stm32g4xx_ll_dma.c
+        stm32g4xx_ll_exti.c
+        stm32g4xx_ll_gpio.c
+        stm32g4xx_ll_rcc.c
+        stm32g4xx_ll_tim.c
+        stm32g4xx_ll_usart.c
+        stm32g4xx_ll_utils.c
+)
+target_link_libraries(stm32g4xx_driver PUBLIC stm32g4xx_driver_h)

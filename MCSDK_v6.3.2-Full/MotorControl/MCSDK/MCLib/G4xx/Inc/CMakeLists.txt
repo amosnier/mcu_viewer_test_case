@@ -1,0 +1,4 @@
+add_library(stm32g4xx_motor_control_h INTERFACE)
+target_include_directories(stm32g4xx_motor_control_h INTERFACE .)
+
+target_link_libraries(stm32g4xx_motor_control_h INTERFACE app_h)
